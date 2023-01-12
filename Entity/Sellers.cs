@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Entity
 {
-    internal class Sellers
+    public class Sellers: Users
     {
 
-        [Required]
-        public int UniqueID { get; set; }
 
     }
 }

@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Entity
 {
-    internal class Product
+    public class Product: BaseEntity
     {
 
         [Required]
-        public int UniqueID { get; set; }
-
-        [Required]
-        public string Nmae { get; set; }
+        public string Name { get; set; }
 
         [Required]
         public int Category { get; set; }
@@ -21,17 +20,14 @@ namespace Entity
         [Required]
         public string Description { get; set; }
 
-       // [Required]
-       // public ??? Image { get; set; }
+        [Required]
+        public string Image { get; set; }
 
         [Required]
-        public int Value { get; set; }
+        public double Value { get; set; }
 
         [Required]
         public bool Enable { get; set; }
-
-        [Required]
-        public bool State { get; set; }
 
     }
 }

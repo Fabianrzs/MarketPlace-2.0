@@ -3,16 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Entity
 {
-    internal class Users
+    public class Users: BaseEntity
     {
-
-
-        [Required]
-        public int UniqueID { get; set; }
-
         [Required]
         public string Name { get; set; }
 
@@ -21,9 +18,6 @@ namespace Entity
 
         [Required]
         public string Password { get; set; }
-
-        [Required]
-        public int State { get; set; }
 
         [Required]
         public int Role { get; set; }

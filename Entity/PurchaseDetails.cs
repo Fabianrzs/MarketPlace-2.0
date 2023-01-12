@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Entity
 {
@@ -21,10 +23,9 @@ namespace Entity
         public int Count { get; set; }
 
         [Required]
-        public int Value { get; set; }
+        public double Value { get; set; }
 
-        [Required]
-        public bool State { get; set; }
+        public Purchase Purchase { get; set; }
 
     }
 }

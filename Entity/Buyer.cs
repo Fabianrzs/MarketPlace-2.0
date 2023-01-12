@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Entity
 {
-    internal class Buyer
+    public class Buyer: Users
     {
-        [Required]
-        public int UniqueID { get; set; }
 
     }
 }

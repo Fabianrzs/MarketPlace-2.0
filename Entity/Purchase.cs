@@ -3,26 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Entity
 {
-    internal class Purchase
+    internal class Purchase: BaseEntity
     {
         [Required]
-        public int UniqueID { get; set; }
-
-        [Required]
-        public string Date { get; set; }
+        public DateTime Date { set => new DateTime(); }
 
         [Required]
         public bool StatePurchase { get; set; }
 
         [Required]
-        public int FullValue { get; set; }
-        
-        [Required]
-        public bool State { get; set; }
+        public double FullValue { get; set; }
 
-
+        public ICollection<PurchaseDetails> PurchaseDetails { get; set; }
     }
 }
