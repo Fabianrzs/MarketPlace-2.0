@@ -31,7 +31,7 @@ namespace Entity
 
 
 
-        public Sellers Sellers { get; set; }
+        public Seller Seller { get; set; }
 
         public Category Category { get; set; }
     }
