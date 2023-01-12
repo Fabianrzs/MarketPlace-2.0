@@ -29,5 +29,10 @@ namespace Entity
         [Required]
         public bool Enable { get; set; }
 
+
+
+        public Sellers Sellers { get; set; }
+
+        public Category Category { get; set; }
     }
 }

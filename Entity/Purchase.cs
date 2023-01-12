@@ -19,6 +19,12 @@ namespace Entity
         [Required]
         public double FullValue { get; set; }
 
+
         public ICollection<PurchaseDetails> PurchaseDetails { get; set; }
+
+
+
+        public Buyer Buyer { get; set; }
+
     }
 }

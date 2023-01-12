@@ -11,6 +11,6 @@ namespace Entity
     public class Sellers: Users
     {
 
-
+        public ICollection<Product> Product { get; set; }
     }
 }
