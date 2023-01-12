@@ -2,7 +2,7 @@
 
 namespace Entity
 {
-    public class Buyer: Users
+    public class Buyer: User
     {
 
     }

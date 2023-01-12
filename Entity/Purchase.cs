@@ -19,6 +19,6 @@ namespace Entity
         [Required]
         public double FullValue { get; set; }
 
-        public ICollection<PurchaseDetails> PurchaseDetails { get; set; }
+        public ICollection<PurchaseDetail> PurchaseDetails { get; set; }
     }
 }

@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
-
-namespace Entity
+namespace Entity.enums
 {
-    public class Sellers: Users
+    public enum EntitiesState
     {
-
-
+        ACTIVE = 1,
+        DESACTIVE = 0
     }
 }

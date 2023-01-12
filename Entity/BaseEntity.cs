@@ -12,7 +12,7 @@ namespace Entity
         [Key]
         public int UniqueID { get; set; }
         [Required]
-        public bool State { get; set; }
+        public int State { get; set; }
 
     }
 }

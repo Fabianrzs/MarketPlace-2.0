@@ -8,8 +8,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entity
 {
-    public class Users: BaseEntity
+    public abstract class User: BaseEntity
     {
+
         [Required]
         public string Name { get; set; }
 
@@ -21,6 +22,17 @@ namespace Entity
 
         [Required]
         public int Role { get; set; }
+
+        public void Encript()
+        {
+            byte[] encryted = System.Text.Encoding.Unicode.GetBytes(Password);
+            Password = Convert.ToBase64String(encryted);
+        }
+        public void DesEncript()
+        {
+            byte[] decryted = Convert.FromBase64String(Password);
+            Password = System.Text.Encoding.Unicode.GetString(decryted);
+        }
 
     }
 }
