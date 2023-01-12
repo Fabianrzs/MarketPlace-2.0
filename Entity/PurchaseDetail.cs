@@ -25,7 +25,11 @@ namespace Entity
         [Required]
         public double Value { get; set; }
 
+
+
         public Purchase Purchase { get; set; }
+
+        public Product Product { get; set; }
 
     }
 }
