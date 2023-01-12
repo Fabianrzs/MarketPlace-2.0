@@ -15,9 +15,6 @@ namespace Entity
         public string Name { get; set; }
 
         [Required]
-        public int Category { get; set; }
-
-        [Required]
         public string Description { get; set; }
 
         [Required]
@@ -29,10 +26,8 @@ namespace Entity
         [Required]
         public bool Enable { get; set; }
 
-
-
         public Seller Seller { get; set; }
 
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
     }
 }

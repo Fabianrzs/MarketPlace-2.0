@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entity
 {
-    internal class PurchaseDetail
+    public class PurchaseDetail
     {
         [Required]
         public int UniqueID { get; set; }

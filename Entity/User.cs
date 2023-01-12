@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Entity
 {
-    public abstract class User: BaseEntity
+    public class User: BaseEntity
     {
 
         [Required]
