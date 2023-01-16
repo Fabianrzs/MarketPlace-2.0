@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System.Data;
 using Microsoft.Data.SqlClient;
+using System.Reflection.Metadata;
 
 namespace DAL.Base
 {
@@ -16,6 +17,11 @@ namespace DAL.Base
             _configuration = configuration;
             _connection = new SqlConnection();
             _connection.ConnectionString = _configuration.GetConnectionString("DefaultConnnetion");
+        }
+
+        public ConnectionManager(string cs)
+        {
+            _connection = new SqlConnection(cs);
         }
 
         public void Open()

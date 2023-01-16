@@ -13,11 +13,6 @@ namespace BLL.Response
         public string Message { get; set; }
         public T Data { get; set; }
 
-        public Response()
-        {
-
-        }
-
         public Response(T data) { 
             Error= false;
             Data= data;
@@ -25,7 +20,7 @@ namespace BLL.Response
 
         public Response(string message)
         {
-            Error = false;
+            Error = true;
             Message = message;
         }
 
